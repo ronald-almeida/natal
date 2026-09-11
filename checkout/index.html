@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f3f3f1">
+  <title>Natal Encantado Rose Decor — Checkout</title>
+  <link rel="stylesheet" href="/checkout/styles.css">
+</head>
+<body>
+  <div class="checkout-page">
+    <main class="checkout-card">
+      <header class="checkout-header">
+        <div class="brand-mark" aria-label="Marca">
+          <span>Rose Decor</span>
+        </div>
+        <div class="country">BR <span>⌄</span></div>
+      </header>
+
+      <section class="product-summary">
+        <div class="image-placeholder" id="productImage">Imagem<br>do produto</div>
+        <div class="product-copy">
+          <h1>Natal Encantado Rose Decor</h1>
+          <div class="product-price">R$ 197,00</div>
+        </div>
+        <button class="details-button" type="button" id="detailsButton">Detalhes <span>⌄</span></button>
+      </section>
+
+      <button class="coupon-button" type="button">Adicionar cupom <strong>＋</strong></button>
+
+      <section class="section-block">
+        <h2>Informações pessoais</h2>
+        <div class="field-group">
+          <input id="email" type="email" autocomplete="email" placeholder="Email">
+          <input id="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Telefone">
+          <input id="name" type="text" autocomplete="name" placeholder="Nome completo">
+        </div>
+      </section>
+
+      <section class="section-block payment-section">
+        <h2>Método de pagamento</h2>
+        <div class="payment-box">
+          <div class="payment-option">
+            <span class="radio-dot"></span>
+            <span class="pix-icon" aria-hidden="true">◆</span>
+            <span>Pix</span>
+          </div>
+          <div class="document-label">Documento</div>
+          <input id="taxId" type="text" autocomplete="off" inputmode="numeric" placeholder="CPF/CNPJ">
+        </div>
+      </section>
+
+      <section class="upsells">
+        <article class="upsell">
+          <div class="upsell-head"><span>↓</span> 🎁 E-book com + de 500 Fotos de Produtos Autorais de Natal Rose Decor</div>
+          <label class="upsell-choice"><input type="checkbox" data-upsell="upsell1"><span>SIM! Quero adicionar o e-book por apenas R$ 29,90</span><b>✓</b></label>
+          <p>Tenha acesso ao e-book com mais de 500 inspirações autorais da Rose Decor: Guirlandas, Escapulários, Arranjos, árvores, enfeites e muito mais...</p>
+          <div class="upsell-product"><div class="mini-image">Logo</div><div><strong>E-book + de 500 Fotos de Produtos Autorais de Natal Rose Decor</strong><span>R$ 29,90</span></div></div>
+        </article>
+
+        <article class="upsell">
+          <div class="upsell-head"><span>↓</span> 🎁 COMBO 2 em 1: leve os dois pelo preço de um</div>
+          <label class="upsell-choice"><input type="checkbox" data-upsell="upsell2"><span>SIM! Quero a Lista de Fornecedores + o Catálogo Pronto por apenas R$ 39,90</span><b>✓</b></label>
+          <p>Leve a Lista de Fornecedores da Rose Decor e Grupo de Adachinhos para comprar barato + o Catálogo Digital com modelos prontos para produzir e vender.</p>
+          <div class="upsell-product"><div class="mini-image">Logo</div><div><strong>Combo (Lista + Catálogo)</strong><span>R$ 39,90</span></div></div>
+        </article>
+
+        <article class="upsell">
+          <div class="upsell-head"><span>↓</span> 🎁 COMBO 2 em 1: leve os dois pelo preço de um</div>
+          <label class="upsell-choice"><input type="checkbox" data-upsell="upsell3"><span>Sim, quero os 2 cursos também! ✓</span></label>
+          <p>Tenha acesso aos cursos completos de Guirlandas e Escapulários para o Natal, Páscoa, Dia a Dia, entre outras temporadas e aumente seu conhecimento e vendas durante o ano.</p>
+          <div class="upsell-product"><div class="mini-image">Logo</div><div><strong>Combo (Escapulários + Guirlandas)</strong><span>R$ 97,00</span></div></div>
+        </article>
+      </section>
+
+      <div class="total-row"><span>Total</span><strong id="total">R$ 197,00</strong></div>
+      <button class="pay-button" id="payButton" type="button">Pagar</button>
+      <div class="secure-row"><span class="lock">♧</span> Transação Segura e Criptografada</div>
+
+      <footer>Ao confirmar sua compra, você concorda com os Termos de Uso.</footer>
+    </main>
+  </div>
+
+  <div class="modal hidden" id="pixModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="pix-modal" role="dialog" aria-modal="true" aria-labelledby="pixTitle">
+      <button class="close-modal" type="button" data-close-modal aria-label="Fechar">×</button>
+      <div class="pix-brand"><span class="pix-brand-icon">◆</span> Pix</div>
+      <h2 id="pixTitle">Pague com Pix</h2>
+      <p class="pix-instruction">Abra o app do seu banco, escaneie o QR Code ou copie o código Pix.</p>
+      <div class="qr-frame"><img id="qrImage" alt="QR Code para pagamento Pix"></div>
+      <div class="pix-total">Valor: <strong id="modalTotal">R$ 197,00</strong></div>
+      <button class="copy-button" id="copyPix" type="button">Copiar código Pix</button>
+      <div class="copy-status" id="copyStatus"></div>
+      <div class="timer">O código Pix fica disponível por <strong id="pixTimer">15:00</strong></div>
+      <div class="waiting"><span></span> Aguardando confirmação do pagamento...</div>
+    </div>
+  </div>
+
+  <script src="/checkout/app.js" defer></script>
+</body>
+</html>
