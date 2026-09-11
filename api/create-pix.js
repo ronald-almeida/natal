@@ -1,3 +1,5 @@
+const QRCode = require('qrcode');
+
 const API_BASE = 'https://api.gatewaypayshark.com.br';
 
 const PRODUCT = Object.freeze({
@@ -142,12 +144,24 @@ module.exports = async function handler(req, res) {
       return res.status(502).json({ success: false, message: 'O gateway não retornou o código Pix.' });
     }
 
+    let qrCodeDataUrl = null;
+    try {
+      qrCodeDataUrl = await QRCode.toDataURL(pixCode, {
+        errorCorrectionLevel: 'M',
+        margin: 2,
+        width: 520
+      });
+    } catch (qrError) {
+      console.error('Erro ao gerar QR Code:', qrError);
+    }
+
     return res.status(200).json({
       success: true,
       paymentId: data?.id || null,
       externalRef,
       amount,
-      pixCode
+      pixCode,
+      qrCodeDataUrl
     });
   } catch (error) {
     if (error?.name === 'AbortError') {
