@@ -4,24 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#f3f3f1">
-  <title>Natal Encantado Rose Decor — Checkout</title>
+  <title>Natal Encantado — Checkout</title>
   <link rel="stylesheet" href="/checkout/styles.css">
 </head>
 <body>
   <div class="checkout-page">
+    <img class="checkout-banner checkout-banner-top" src="./imagem-cima.png" alt="" onerror="this.hidden=true">
+
     <main class="checkout-card">
-      <img class="checkout-banner checkout-banner-top" src="./imagem-cima.png" alt="" onerror="this.hidden=true">
       <header class="checkout-header">
-        <div class="brand-mark" aria-label="Marca">
-          <span>Rose Decor</span>
-        </div>
+        <div class="brand-mark" aria-label="Marca"></div>
         <div class="country">BR <span>⌄</span></div>
       </header>
 
       <section class="product-summary">
-        <div class="image-placeholder" id="productImage"><img src="./logo-produto.png" alt="Natal Encantado Rose Decor" onerror="this.hidden=true"></div>
+        <div class="image-placeholder" id="productImage"><img src="./logo-produto.png" alt="Natal Encantado" onerror="this.hidden=true"></div>
         <div class="product-copy">
-          <h1>Natal Encantado Rose Decor</h1>
+          <h1>Natal Encantado</h1>
           <div class="product-price">R$ 197,00</div>
         </div>
         <button class="details-button" type="button" id="detailsButton">Detalhes <span>⌄</span></button>
@@ -43,7 +42,7 @@
         <div class="payment-box">
           <div class="payment-option">
             <span class="radio-dot"></span>
-            <span class="pix-icon" aria-hidden="true">◆</span>
+            <svg class="pix-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5.59935 5.63592C5.50809 5.63592 5.46239 5.52558 5.52692 5.46105L8.27602 2.71191C9.22885 1.7627 10.7708 1.7627 11.7237 2.71191L14.4728 5.46105C14.5373 5.52558 14.4916 5.63592 14.4004 5.63592C13.8185 5.63592 13.2693 5.8614 12.8584 6.276L10.3853 8.73813C10.1708 8.9527 9.82892 8.9527 9.61435 8.73813L7.14134 6.276C6.73039 5.8614 6.18124 5.63592 5.59935 5.63592Z" fill="currentColor"></path><path d="M14.4004 14.3652C14.4916 14.3652 14.5373 14.4755 14.4728 14.5401L11.7237 17.2892C10.7708 18.2384 9.22885 18.2384 8.27602 17.2892L5.52692 14.5401C5.46239 14.4755 5.50809 14.3652 5.59935 14.3652C6.18124 14.3652 6.73039 14.1397 7.14134 13.7251L9.61435 11.263C9.82892 11.0484 10.1708 11.0484 10.3853 11.263L12.8584 13.7251C13.2693 14.1397 13.8185 14.3652 14.4004 14.3652Z" fill="currentColor"></path><path d="M17.2881 11.724L16.0643 12.9477C15.6231 13.389 15.0246 13.6369 14.4005 13.6369C14.0114 13.6369 13.6477 13.4842 13.3713 13.2114L10.8983 10.7457C10.4037 10.251 9.59632 10.251 9.10172 10.7457L6.62871 13.2114C6.35231 13.4842 5.98864 13.6369 5.98864 13.6369C4.97544 13.6369 4.37694 13.389 3.93566 12.9477L2.7119 11.724C1.7627 10.7711 1.7627 9.2291 2.7119 8.27625L3.93566 7.05247C4.37694 6.61119 4.97544 6.36328 5.5995 6.36328C5.98864 6.36328 6.35231 6.51603 6.62871 6.78879L9.10172 9.25456C9.34902 9.50186 9.67633 9.62551 10 9.62551C10.3237 9.62551 10.651 9.50186 10.8983 9.25456L13.3713 6.78879C13.6477 6.51603 14.0114 6.36328 14.4005 6.36328C15.0246 6.36328 15.6231 6.61119 16.0643 7.05247L17.2881 8.27625C18.2373 9.2291 18.2373 10.7711 17.2881 11.724Z" fill="currentColor"></path></svg>
             <span>Pix</span>
           </div>
           <div class="document-label">Documento</div>
@@ -76,18 +75,18 @@
 
       <div class="total-row"><span>Total</span><strong id="total">R$ 197,00</strong></div>
       <button class="pay-button" id="payButton" type="button">Pagar</button>
-      <div class="secure-row"><span class="lock">♧</span> Transação Segura e Criptografada</div>
-
-      <img class="checkout-banner checkout-banner-bottom" src="./imagem-baixo.png" alt="" onerror="this.hidden=true">
-      <footer>Ao confirmar sua compra, você concorda com os Termos de Uso.</footer>
+      <div class="secure-row"><svg class="secure-lock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="16" r="1"></circle><rect x="3" y="10" width="18" height="12" rx="2"></rect><path d="M7 10V7a5 5 0 0 1 10 0v3"></path></svg> Transação Segura e Criptografada</div>
     </main>
+
+    <img class="checkout-banner checkout-banner-bottom" src="./imagem-baixo.png" alt="" onerror="this.hidden=true">
+    <footer>Ao confirmar sua compra, você concorda com os Termos de Uso.</footer>
   </div>
 
   <div class="modal hidden" id="pixModal" aria-hidden="true">
     <div class="modal-backdrop" data-close-modal></div>
     <div class="pix-modal" role="dialog" aria-modal="true" aria-labelledby="pixTitle">
       <button class="close-modal" type="button" data-close-modal aria-label="Fechar">×</button>
-      <div class="pix-brand"><span class="pix-brand-icon">◆</span> Pix</div>
+      <div class="pix-brand"><svg class="pix-brand-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5.59935 5.63592C5.50809 5.63592 5.46239 5.52558 5.52692 5.46105L8.27602 2.71191C9.22885 1.7627 10.7708 1.7627 11.7237 2.71191L14.4728 5.46105C14.5373 5.52558 14.4916 5.63592 14.4004 5.63592C13.8185 5.63592 13.2693 5.8614 12.8584 6.276L10.3853 8.73813C10.1708 8.9527 9.82892 8.9527 9.61435 8.73813L7.14134 6.276C6.73039 5.8614 6.18124 5.63592 5.59935 5.63592Z" fill="currentColor"></path><path d="M14.4004 14.3652C14.4916 14.3652 14.5373 14.4755 14.4728 14.5401L11.7237 17.2892C10.7708 18.2384 9.22885 18.2384 8.27602 17.2892L5.52692 14.5401C5.46239 14.4755 5.50809 14.3652 5.59935 14.3652C6.18124 14.3652 6.73039 14.1397 7.14134 13.7251L9.61435 11.263C9.82892 11.0484 10.1708 11.0484 10.3853 11.263L12.8584 13.7251C13.2693 14.1397 13.8185 14.3652 14.3652Z" fill="currentColor"></path><path d="M17.2881 11.724L16.0643 12.9477C15.6231 13.389 15.0246 13.6369 14.4005 13.6369C14.0114 13.6369 13.6477 13.4842 13.3713 13.2114L10.8983 10.7457C10.4037 10.251 9.59632 10.251 9.10172 10.7457L6.62871 13.2114C6.35231 13.4842 5.79746 13.6369 5.19222 16.134H3.75286C3.69154 16.134 3.634 16.1486 3.57983 16.169L0.995108 13.5842C-0.331703 12.2573 -0.331703 10.1062 0.995108 8.77947L3.57994 6.19464C3.63411 6.21504 3.69154 6.22956 3.75286 6.22956H5.19222C5.79746 6.22956 6.38976 6.47496 6.81744 6.90285L10.1843 10.2697C10.4982 10.5833 10.9103 10.7404 11.3227 10.7404C11.7349 10.7404 12.1473 10.5833 12.4611 10.2694L15.8154 6.91505C16.243 6.48716 16.8354 6.24176 17.4407 6.24176H18.6112C18.676 6.24176 18.7373 6.22756 18.794 6.20484L21.3686 8.77947C22.6954 10.1062 22.6954 12.2573 21.3686 13.5842L18.7941 16.1587C18.7373 16.1359 18.6761 16.1218 18.6112 16.1218H17.4407C16.8354 16.1218 16.243 15.8764 15.8154 15.4484L12.4611 12.0945C11.8532 11.4859 10.7925 11.4862 10.184 12.0942L6.81744 15.4607C6.38976 15.8886 5.79746 16.134 5.19222 16.134" fill="currentColor"></path></svg> Pix</div>
       <h2 id="pixTitle">Pague com Pix</h2>
       <p class="pix-instruction">Abra o app do seu banco, escaneie o QR Code ou copie o código Pix.</p>
       <div class="qr-frame"><img id="qrImage" alt="QR Code para pagamento Pix"></div>
